@@ -1,0 +1,238 @@
+/*
+*****************************************************************************************************************************
+* HOJA DE ESTILO GENERAL CAMPUS DE EXCELENCIA INTERNACIONAL
+* DEPARTAMENTO DE ESTUDIOS E IMAGEN CORPORATIVA (DEIC)
+* Universidad Complutense de Madrid
+* 
+* Fichero:             normal.css
+* Finalidad:           Visualizacion normal 
+* Fecha actualizacion: 17/02/2011
+* 
+*****************************************************************************************************************************
+*/
+
+/* Cuerpo general */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+ 
+body {
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 0.8em;
+	font-family: Verdana, Arial, Helvetica;
+	text-align: center;
+}
+
+div#shim {
+	visibility: hidden;
+	width: 100%;
+	height: 40%;
+	margin-top: -300px;
+	float: left;
+}
+
+#wraper {
+	position: relative;
+	width: 1000px;
+	height: 600px;
+	clear: both;
+	padding: 0px;
+	margin: 0 auto 0 auto;
+	left: 50%;
+    margin-left: -500px;
+	text-align: left;
+}
+
+header {
+	position: relative;
+	height: 10px;
+	width: 1000px;
+}
+
+footer {
+	position: absolute;
+	width: 1000px;
+	height: 100px;
+	margin-top: 25px;
+}
+
+#footLogo{
+	position: absolute;
+	top: 0px;
+	padding-top: 0px;
+	right: 50px;
+	width: 425px;
+	color: white;
+}
+
+#fb{
+	position: absolute;
+	top: 0px;
+	padding-top: 7px;
+	left: 50px;
+	width: 425px;
+}
+
+#footLogo img{
+	vertical-align: bottom;
+}
+
+#footLogo a:link{
+	color: #ff8000;
+}
+
+#indexslide {
+	position:absolute;
+	margin-top: 50px;
+}
+
+#indexLogos {
+	position:absolute;
+	padding: 0px;
+	margin: 350px 0px 0px 30px;
+}
+
+#indexLogos img {
+	border: 0px;
+	padding: 0px;
+	margin: 10px 10px 10px 10px;
+}
+
+#content{
+	position: absolute;
+	height: 540px;
+	width: 640px;
+	top: 25px;
+	left: 270px;
+	margin-right: 20px;
+	padding: 0px 30px 0px 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 10px;
+	z-index: 0;
+}
+
+#innerContent{
+	position: relative;
+	height: 520px;
+	width: 660px;
+	z-index: 0;
+	overflow: auto;
+	margin: 13px 0px 0px 0px;
+	word-wrap: break-word;
+}
+
+#innerContent2{
+	position: relative;
+	height: 500px;
+	width: 540px;
+	z-index: 0;
+	overflow: auto;
+	margin: 13px 0px 0px 120px;
+	word-wrap: break-word;
+}
+
+#logo{
+	position: relative;
+	height: 200px;
+	width: 250px;
+	background: url(../images/ucm.jpg) no-repeat center center;
+}
+	
+#logo a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+h1, h2, h3 {
+	color: white;
+}
+
+h4{
+	color: #f6972b;
+}
+
+a:visited, a:link  {
+	color: #FF8000;
+}
+
+
+/**************************************************/
+/*   			NAVIGATION MENU                   */
+/**************************************************/
+
+.treeview, .treeview ul { 
+	padding: 0;
+	margin-right: 5px;
+	margin: 0;
+	list-style: none;
+	color: white;
+}
+
+.treeview ul {
+	background-color: black;
+	margin-top: 4px;
+}
+
+.treeview .hitarea {
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+	margin-right: 5px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: #FF8000; cursor: pointer; }
+
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; margin-right: 5px; }
+
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+.filetree li { padding: 3px 0 2px 16px; }
+.filetree span.folder, .filetree span.file { padding: 1px 0 1px 16px; display: block; }
+
+
+nav {
+	position: relative;
+	width: 250px;
+	height: 425px;
+	overflow: auto;
+}
+
+nav a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #FF8000;
+}
